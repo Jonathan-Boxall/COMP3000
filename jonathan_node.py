@@ -4,6 +4,14 @@ import cv2
 from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
+import firebase_admin
+from firebase_admin import credentials
+
+cred = credentials.Certificate("dissertation-fd159-firebase-adminsdk-yfsdf-cf7f19ee4a.json")
+firebase_admin.initialize_app(cred , {
+    'databaseURL' : 'https://dissertation-fd159-default-rtdb.europe-west1.firebasedatabase.app/',
+    'storageBucket' : 'gs://dissertation-fd159.appspot.com'
+})
 
 class image_converter:
     def __init__(self):
