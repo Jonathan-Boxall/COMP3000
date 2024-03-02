@@ -6,10 +6,10 @@ This project implements facial recognition into the QTrobot with a cloud-based d
 The following libraries have been used:
 
 •firebase_admin
-
 •face_recognition
-
 •datetime
+
+DUE TO THE CAMERA ON THE QTROBOT, YOU MUST BE FAIRLY CLOSE TO IT FOR IT TO RECOGNISE A FACE. AT MOST YOU CAN BE ABOUT 1M AWAY.
 
 To use this program, simply run it and allow it to take a picture of your face. If your face has been setup as one of the known faces, you will be given authorisation and it will be logged in the database.
 
