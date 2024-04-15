@@ -1,16 +1,43 @@
-# COMP3000
-COMP3000 Dissertation project
+# COMP3000 
 
-This project implements facial recognition into the QTrobot with a cloud-based database.
+COMP3000 Dissertation project 
 
-The following libraries have been used:
+  
 
-•firebase_admin
-•face_recognition
-•datetime
+This project implements facial recognition into the QTrobot with a cloud-based database. 
 
-DUE TO THE CAMERA ON THE QTROBOT, YOU MUST BE FAIRLY CLOSE TO IT FOR IT TO RECOGNISE A FACE. AT MOST YOU CAN BE ABOUT 1M AWAY.
+  
 
-To use this program, simply run it and allow it to take a picture of your face. If your face has been setup as one of the known faces, you will be given authorisation and it will be logged in the database.
+The following libraries have been used: 
 
-Once your face has been recognised, an email will be sent to the registered email address held in the database.
+    rospy 
+
+    sensor_msgs.msg (part of ROS) 
+
+    cv_bridge (part of ROS) 
+
+    cv2 (OpenCV) 
+
+    face_recognition 
+
+    datetime 
+
+    firebase_admin 
+
+    std_msgs.msg (part of ROS) 
+
+    time 
+
+    smtplib (Python standard library for sending emails) 
+
+    email.mime.multipart (Python standard library for creating MIME multipart messages) 
+
+    email.mime.text (Python standard library for creating MIME text messages) 
+
+    random 
+
+ To use this program, you must have a rosnode setup for it to run from. Once this is done, simply run it in the terminal where it will take a picture of your face to compare with the known faces stored in the database.  
+
+If your face has been setup as a known face, you will be recognised and sent a 2FA code to your registered email (also held in the database). Upon recognition, an access log held in the database will also be updated with your name and time of access. 
+
+After the 2FA code is sent, the user will be prompted to enter it to gain full authentication.  
