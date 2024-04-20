@@ -1,11 +1,10 @@
 # COMP3000 
 
-COMP3000 Dissertation project 
+COMP3000 Dissertation project  - Security and Authentication for Social Robots Through Facial Recognition
 
-  
+Project Supervisor: Hai-Van Dang  
 
-This project implements facial recognition into the QTrobot with a cloud-based database. 
-
+This project is the implementation of facial recognition and two-factor email authentication through the use of randomly generated codes into a pre-existing social robot. (QTRobot by luxai) This project will be achieved using Python to add extra levels of security to these devices. This is primarily going to be used by elderly, special needs children and any guardians or carers they have, as this is the primary use of the QTRobot.
   
 
 The following libraries have been used: 
