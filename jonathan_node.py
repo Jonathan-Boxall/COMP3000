@@ -124,7 +124,7 @@ class FaceRecognition:
                             self.talk.publish(f"Welcome {name}, you have been successfully authenticated.")
                         else:
                             self.talk.publish("Invalid authentication code. Access denied.")
-                            self.talk.publish(f"Sorry {name}, the code you have entered is invalid. Please try again or seek admin support.)
+                            self.talk.publish(f"Sorry {name}, the code you have entered is invalid. Please try again or seek admin support.")
                     
             except CvBridgeError as e:
                 rospy.logerr("CvBridge Error: %s", e)
